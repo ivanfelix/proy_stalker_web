@@ -1,0 +1,1130 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin:0;
+    background: #8ecbe2;
+    color: #fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.5em;
+}
+.browsehappy a{
+    color:#ffe282;
+    text-decoration:underline;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+a{
+	color:inherit;
+	text-decoration:none;
+}
+ul{
+	margin:0;
+    list-style:none;
+	padding:0;
+}
+footer{
+    background: #606060;
+    text-align: center;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 0.7em;
+}
+footer li{
+    display: inline-block;
+    margin: 0 12px;
+}
+#lo {
+    width: 261px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0 0 30px;
+}
+
+#log {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 30px 0 0;
+    float: right;
+}
+
+#log a{
+    display: inline-block;
+    padding: 5px 24px;
+    font-size: 0.8em;
+    background: #fcc239;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.bota{
+    display: inline-block;
+    padding: 5px 24px;
+    font-size: 0.8em;
+    background: #fcc239;
+    border: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#mensajes .bota{
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: 0.7em;
+    background: #fcc239;
+    border: none;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+#conp {
+    width: 90%;
+    margin: 30px auto;
+}
+
+#sli {
+    height: 300px;
+    margin: 30px auto;
+    background: #efefef;
+}
+
+#act a{
+    padding: 30px 18%;
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    background: #fcc239;
+}
+#act a:nth-child(2){
+    margin-left:2%; 
+}
+
+#act {
+    margin: 20px auto 40px;
+    text-align: center;
+}
+#act h3{
+    margin: 70px auto 30px;
+}
+
+#tp {
+    text-align: center;
+    margin: 80px 0 50px;
+}
+h1, h2, h3, h4{
+    color: #56a1d5 ;
+    font-weight: normal;
+}
+
+#bcon {
+    padding: 10px 50px !important;
+    display: inline-block;
+    height: auto !important;
+    margin: 80px auto 40px;
+    width: auto !important;
+    background: #56a1d5 !important;
+}
+
+#login {
+    background: #efefef;
+    margin: 10px auto 100px;
+    width: 30%;
+    padding: 20px 30px;
+}
+input[type=text],input[type=email],input[type=tel],textarea{
+    width: 90%;
+    border: none;
+    padding: 6px;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+}
+textarea{
+    height: 70px;
+}
+#login label{
+    display: block;
+    margin-bottom: 10px;
+}
+#login input,#login select{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#paqs {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#cats {
+    width: 25%;
+    margin:43px 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+#cats h3{
+    margin: 0 0 10px;
+}
+#infp {
+    border-radius: 3px;
+    width: 23%;
+    position: relative;
+    margin:43px 0 0;
+    border: 1px solid #efefef;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+#infonegocio {
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid #efefef;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+#infp h2{
+    font-size: 1em;
+    margin: 10px 0 3px;
+    color: #fcc239;
+}
+#infp h3{
+    margin: 0 0 20px;
+    font-size: 0.8em;
+}
+#cats li{
+    padding: 5px 0;
+    display: block;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #56a1d5;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em
+}
+#cats li{
+    display: inline-block;
+    margin: 2px 1px;
+    width: 48%;
+}
+
+
+#container h1{
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+#container div{
+    width: 21%;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #efefef;
+    background: #f7f7f7;
+    margin: 0px 5px 12px;
+}
+#container div img{
+    width: 100%;
+}
+
+#pp {
+    width: 150px;
+    height: 150px;
+    background: #efefef;
+}
+#pp img{
+    width: 150px;
+    height: 150px;
+}
+
+#banr {
+    width: 80%;
+    height: 210px;
+    background: #efefef;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+#lep {
+    display: inline-block;
+    margin-right: 2%;
+}
+#lep span a{
+    font-size: 0.8em;
+    padding: 4px 10px;
+    background: #efefef;
+    display: block;
+    text-align: center;
+    margin: 2px auto 0;
+}
+#lep h1{
+    margin: 10px 0 20x;
+    width: 150px;
+    display: block;
+    font-size: 1em;
+    line-height: 100%;
+}
+
+#allinf {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+#allinf li{
+    display: inline-block;
+    margin: 0 6px 0 0;
+    padding-right: 10px;
+    border-right: 1px solid #d1d1d1;
+}
+#allinf li:last-child{
+    border-right: none;
+}
+#allinf a{
+    font-weight: 100;
+    font-style: italic;
+    color: #4eb900;
+}
+
+#gpw section{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#msjp {
+    background: #f8f8f8;
+    padding: 10px;
+    position: relative;
+    margin: 10px 0 0;
+    padding-bottom: 44px;
+}
+#msjp:first-child {
+    margin: 0;
+}
+#msjp span{
+    font-size: 0.9em;
+    font-style: italic;
+}
+#msjp h3{
+    margin: 0;
+    font-size: 0.9em;
+}
+#msjp p{
+    margin: 0;
+    font-size: 0.8em;
+}
+
+
+
+#rigp {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+}
+
+#busc label{
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+#busc {
+    margin: 0 0 20px 5px;
+    text-align: right;
+}
+
+#gpw {
+    margin: 30px auto 30px;
+}
+
+#gal div{
+    width: 90px;
+    height: 90px;
+    margin: 0 3px 6px 0;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+#gal div img{
+    width: 170%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.reply {
+    width: 90%;
+    margin:6px 0 0 5%;
+    padding: 6px 10px;
+    background: #fff;
+}
+
+#prom div{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#prom h3{
+    margin: 0;
+    font-size: 0.9em;
+}
+#prom p{
+    margin: 0;
+    font-size: 0.8em;
+}
+
+#prom a{
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #4eb900;
+}
+
+#rank {
+    padding: 4px 10px;
+    display: inline-block;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    bottom: 5px;
+    left: 5px;
+}
+
+#lov {
+    display: inline-block;
+    margin-left: 5px;
+}
+#lov span{
+    padding: 5px;
+    margin-left: 5px;
+    width: auto;
+}
+
+#sal {
+    margin-bottom: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 0.8em;
+}
+
+#prop {
+    width: 120px;
+}
+#prop img{
+    width: 100%;
+}
+
+#sam {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 6px 20px; 
+    background: #efefef;
+}
+
+#edinf {
+    font-size: 0.8em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    background: #efefef;
+}
+#edinf a{
+    display: block;
+    width: 40px;
+    padding: 4px 20px;
+}
+
+.mis a{
+    font-size:0.8em;
+    display: block;
+    padding: 3px 10px;
+    color: #fff;
+    background: #56a1d5;
+}
+.mis{
+    display: inline-block;
+}
+
+#enviocliente {
+    margin: 20px 0 0;
+}
+
+.paq {
+    width: 20%;
+    display: inline-block;
+    height: 200px;
+    background: #efefef;
+}
+
+#publicarprod {
+    background: #efefef !important;
+    color: #444 !important;
+    margin:0 0 10px; 
+}
+
+#enviocontacto {
+    margin: 20px 0 0;
+}
+
+#mensajes {
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#mapa {
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+}
+#mapa iframe{
+    width: 100%;
+}
+
+#registro_negocio {
+    width: 40%;
+    margin: 0 4% 0 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+#registro_negocio input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media(min-width:1280px) and (max-width:1360px){}
+@media(min-width:1024px) and (max-width:1279px){}
+@media(min-width:980px) and (max-width:1023px){}
+@media(min-width:800px) and (max-width:979px){}
+@media(min-width:768px) and (max-width:799px){}
+@media(min-width:480px) and (max-width:767px){
+    #lo {
+        width: 261px;
+        height: 60px;
+        display: block;
+        vertical-align: top;
+        margin: 10px auto 10px;
+    }
+    #log {
+        display: block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px auto 0;
+        float: none;
+    }
+    #conp {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #tp {
+        margin: 40px 0 50px;
+    }
+    #act a{
+        padding: 30px 18%;
+        display: block;
+        margin: 0 0 15px !important;
+    }
+    #act h3{
+        margin: 40px auto 30px;
+    }
+    #cats {
+        width: 100%;
+        margin:20px 0 20px;
+        text-align: center;
+        display: block;
+    }
+    #busc {
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px ;
+        text-align: center;
+    }
+    #infonegocio {
+        margin-top: 20px;
+        padding: 20px;
+        display: block;
+    }
+    #rigp {
+        width: 100%;
+        display: block;
+        margin:0 auto !important;
+    }
+    #container div{
+        width: 40%;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: top;
+        border: 1px solid #efefef;
+        background: #f7f7f7;
+        margin: 0px 5px 12px;
+    }
+    #gpw section{
+        width: 100%;
+        display: block;
+    }
+    #banr {
+        width: 100%;
+        margin-top: 20px;
+        height: 210px;
+    }
+    #mapa {
+        width: 90%;
+        display: block;
+        margin:10px auto 20px;
+    }
+    #mensajes {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+@media(min-width:360px) and (max-width:479px){
+    #lo {
+        width: 261px;
+        height: 60px;
+        display: block;
+        vertical-align: top;
+        margin: 10px auto 10px;
+    }
+    #log {
+        display: block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px auto 0;
+        float: none;
+    }
+    #conp {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #tp {
+        margin: 40px 0 50px;
+    }
+    #act a{
+        padding: 30px 18%;
+        display: block;
+        margin: 0 0 15px !important;
+    }
+    #act h3{
+        margin: 40px auto 30px;
+    }
+    #lo {
+        width: 261px;
+        height: 60px;
+        display: block;
+        vertical-align: top;
+        margin: 10px auto 10px;
+    }
+    #log {
+        display: block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px auto 0;
+        float: none;
+    }
+    #conp {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #tp {
+        margin: 40px 0 50px;
+    }
+    #act a{
+        padding: 30px 18%;
+        display: block;
+        margin: 0 0 15px !important;
+    }
+    #act h3{
+        margin: 40px auto 30px;
+    }
+    #cats {
+        width: 100%;
+        margin:20px 0 20px;
+        text-align: center;
+        display: block;
+    }
+    #busc {
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px ;
+        text-align: center;
+    }
+    #infonegocio {
+        margin-top: 20px;
+        padding: 20px;
+        display: block;
+    }
+    #rigp {
+        width: 100%;
+        display: block;
+        margin:0 auto !important;
+    }
+    #container div{
+        width: 40%;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: top;
+        border: 1px solid #efefef;
+        background: #f7f7f7;
+        margin: 0px 5px 12px;
+    }
+    #gpw section{
+        width: 100%;
+        display: block;
+    }
+    #banr {
+        width: 100%;
+        margin-top: 20px;
+        height: 210px;
+    }
+    #mapa {
+        width: 90%;
+        display: block;
+        margin:10px auto 20px;
+    }
+    #mensajes {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+@media(min-width:240px) and (max-width:359px){
+    #lo {
+        width: 261px;
+        height: 60px;
+        display: block;
+        vertical-align: top;
+        margin: 10px auto 10px;
+    }
+    #log {
+        display: block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px auto 0;
+        float: none;
+    }
+    #conp {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #tp {
+        margin: 40px 0 50px;
+    }
+    #act a{
+        padding: 30px 18%;
+        display: block;
+        margin: 0 0 15px !important;
+    }
+    #act h3{
+        margin: 40px auto 30px;
+    }
+    #lo {
+        width: 261px;
+        height: 60px;
+        display: block;
+        vertical-align: top;
+        margin: 10px auto 10px;
+    }
+    #log {
+        display: block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px auto 0;
+        float: none;
+    }
+    #conp {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #tp {
+        margin: 40px 0 50px;
+    }
+    #act a{
+        padding: 30px 18%;
+        display: block;
+        margin: 0 0 15px !important;
+    }
+    #act h3{
+        margin: 40px auto 30px;
+    }
+    #cats {
+        width: 100%;
+        margin:20px 0 20px;
+        text-align: center;
+        display: block;
+    }
+    #busc {
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px ;
+        text-align: center;
+    }
+    #infonegocio {
+        margin-top: 20px;
+        padding: 20px;
+        display: block;
+    }
+    #rigp {
+        width: 100%;
+        display: block;
+        margin:0 auto !important;
+    }
+    #container div{
+        width: 40%;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: top;
+        border: 1px solid #efefef;
+        background: #f7f7f7;
+        margin: 0px 5px 12px;
+    }
+    #gpw section{
+        width: 100%;
+        display: block;
+    }
+    #banr {
+        width: 100%;
+        margin-top: 20px;
+        height: 210px;
+    }
+    #mapa {
+        width: 90%;
+        display: block;
+        margin:10px auto 20px;
+    }
+    #mensajes {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+#alerta {
+    width: 40%;
+    background: #efefef;
+    padding: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+#alerta div{
+    display: none;
+}
+
+#ok {
+    background: #9ce566;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+}
+#error {
+    background: #fa4242;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+#registro_categorias {
+    display: inline-block
+}
