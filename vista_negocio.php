@@ -1,7 +1,8 @@
 <?php
 include('coneccion.php');
-$id_neg = $_POST("negocioid");
-echo $id_neg;
+$id_neg = $_GET["negocioId"];
+$query = mysql_query("SELECT * FROM negocios WHERE n_id = $id_neg");
+while($row=mysql_fetch_assoc($query)){
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -41,9 +42,9 @@ echo $id_neg;
                    <div id="pp">
                        <img src="img/775761672_5c275ae961_o.jpg">
                    </div>
-                   <h1>Globos de Cantoya Saltillo</h1>
+                   <h1><?php echo $row["n_nombre"]; ?></h1>
                    <span><a href="">Enviar un mensaje</a></span>
-                   
+                  
                </section>
                <section id="banr">
                    <div id="rank">
@@ -51,11 +52,11 @@ echo $id_neg;
                    </div>
                </section>
                <section id="allinf">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque, quidem illum quasi aut sit nostrum harum similique deserunt! Magnam, perferendis, illo deleniti dignissimos doloribus vel recusandae architecto quod enim.</p>
+                   <p><?php echo $row["n_descripcion"]; ?></p>
                    <ul>
-                       <li><a href="">Telefono: 844 4 49 49 49</a></li>
-                       <li><a href="">Email: sdfsdf@gmail.com</a></li>
-                       <li><a href="">Facebook: /globoscantoyasaltillo</a></li>
+                       <li><a href="">Telefono: <?php echo $row["n_tel"]; ?></a></li>
+                       <li><a href="">Email: <?php echo $row["n_email"]; ?></a></li>
+                       <li><a target="blank" href="http://facebook.com/<?php echo $row["n_facebook"]; ?>">Facebook: /<?php echo $row["n_facebook"]; ?></a></li>
                    </ul>
                </section>
            </section> 
@@ -95,7 +96,7 @@ echo $id_neg;
            </section>
            <section id="abajo">
                <section id="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7204.48399858275!2d-101.02745379999998!3d25.463593549999963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86886da0c7045f4f%3A0x6c8ce1464d1569b!2sSaltillo+2000!5e0!3m2!1ses-419!2smx!4v1396580151079" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                    <?php echo $row["n_mapa"]; ?>
                </section>
                <section id="mensajes">
                    <section id="msjp">
@@ -119,6 +120,9 @@ echo $id_neg;
                </section>
             </section>
         </section>
+<?php
+  }
+?>
 <footer><a href="contact.html">conta </a><a href="bepart.html"> contr</a></footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

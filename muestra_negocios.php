@@ -18,7 +18,7 @@
                 
                 $dive='';
                 foreach($data as $i){
-                    $dive .= "<div><a href=vista_negocio.php?negocioId=".$i['n_id'].">". $i['n_nombre'] ."</a></div>";
+                    $dive .= "<div><img src=img/showcase-50_med.jpeg><a href=vista_negocio.php?negocioId=".$i['n_id'].">". $i['n_nombre'] ."</a></div>";
                 }
                 echo json_encode($dive);
             exit;

@@ -1,4 +1,3 @@
-<?php include('coneccion.php'); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -27,29 +26,23 @@
                 <a href="/"><img src="img/logo.png"></a>
             </div>
             <section id="log">
-                <a href="login.html">Entrar</a>
-                <a href="registro.html">Registrarme</a>
+                <a href="login.html">Salir</a>
             </section>
         </header>
         <section id="conp">
-            
-            <section id="cats">
-                <h3>Categorias</h3>
-                <?php
-                    $result = mysql_query("SELECT * FROM categorias;");
-                ?>
-                <ul>
-                <?php
-                    while($row = mysql_fetch_assoc($result)){
-                ?>
-                    <li id="<?php echo $row["cat_id"] ?>"><?php echo $row["cat_nombre"]?></li>
-                <?php
-                }
-                ?>
-                </ul>
+            <section id="infp">
+                <div id="prop">
+                    <img src="img/IMG_0416.JPG">
+                </div>
+                <h2>Ivan Felix</h2>
+                <h3>Saltillo, Coahuila</h3>
+                <div class="mis"><a href="">Mis Lugares</a></div>
+                <div class="mis"><a href="">Siguiendo</a></div>
+                <div id="edinf"><a href="">Editar</a></div>
             </section>
             <section id="rigp">
                 <form id="busc" action="">
+                    <label>busc</label>
                     <input id="input_list" name="input_list" list="countries"></input>
                     <datalist id="countries">
                         <option value="Afghanistan">Afghanistan</option>
@@ -73,15 +66,38 @@
                     <input class="bota" type="button" value="env"> 
                 </form>
                 <section id="container">
+                    <div class="item grid-sizer">
+                        <img src="img/showcase-50_med.jpeg">
+                        <h1><a href="vipe.html">nomb</a></h1>
+                        <span><a href="">edit</a></span>
+                        <span><a href="">elim</a></span>
+                        <span><a href="">elim</a></span>
+                    </div>
+                    <div class="item grid-sizer">
+                        <img src="img/IMG_0416.JPG">
+                        <h1><a href="vipe.html">nomb</a></h1>
+                    </div>
+                    <div class="item grid-sizer">
+                        <img src="img/775761672_5c275ae961_o.jpg">
+                        <h1><a href="vipe.html">nomb</a></h1>
+                    </div>
+                    <div class="item grid-sizer">
+                        <img src="img/showcase-50_med.jpeg">
+                        <h1><a href="vipe.html">nomb</a></h1>
+                    </div>
+                    <div class="item grid-sizer">
+                        <img src="img/IMG_0416.JPG">
+                        <h1><a href="vipe.html">nomb</a></h1>
+                    </div>
                     
                 </section>
             </section>
         </section>
-        <footer>
+    <footer>
         <ul>
             <li><a href="">Acerca de nosotros</a></li>
             <li><a href="">Aviso legal</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
             <li><a href="">FAQ's</a></li>
             <li><a href="">Network</a></li>
             <li><a href="">Política de privacidad</a></li>
@@ -93,7 +109,18 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/r.js"></script>
+        <script>
+            var container = document.querySelector('#container');
+            var msnry;
+            imagesLoaded( container, function() {
+              msnry = new Masonry( container,{
+                  itemSelector: '.item',
+              columnWidth: container.querySelector('.grid-sizer')
+              })
+            })
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

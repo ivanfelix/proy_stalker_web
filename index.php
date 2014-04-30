@@ -37,7 +37,7 @@
             <p>Placeat, at, laboriosam iusto dignissimos id voluptatibus necessitatibus sapiente ea molestias architecto nam illo debitis ipsa qui doloremque commodi natus eveniet omnis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, at, laboriosam iusto dignissimos id volup</p></section>
             <section id="sli"></section>
             <section id="act">
-                <a href="categorias_lugares.html">Lugares</a>
+                <a href="categorias_lugares.php">Lugares</a>
                 <a href="categorias_articulos.html">Articulos</a>
                 <h3>sdasdasdasd</h3>
                 <p>Placeat, at, laboriosam iusto dignissimos id voluptatibus necessitatibus sapiente ea molestias architecto nam illo debitis ipsa qui doloremque commodi natus eveniet omnis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, at, laboriosam iusto dignissimos id volup</p>

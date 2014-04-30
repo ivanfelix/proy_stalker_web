@@ -31,9 +31,11 @@
             </section>
         </header>
         <section id="conp">
-            <form id="registro_negocio">
+            <form id="registro_negocio" enctype="multipart/form-data">
                 <label>Nombre del lugar</label>
                 <input id="n_nombre" name="n_nombre" type="text">
+                <label>Foto principal</label>
+                <input id="foto_p" type="file" name="foto_p">
                 <label>Teléfono</label>
                 <input id="n_telefono" name="n_telefono" type="text">
                 <label>Email</label>

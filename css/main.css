@@ -272,6 +272,7 @@ textarea{
     position: relative;
     border: 1px solid #efefef;
     padding: 20px;
+    width: 90%;
     display: inline-block;
     vertical-align: top;
 }
@@ -300,19 +301,23 @@ textarea{
     width: 48%;
 }
 
-
-#container h1{
-    margin: 5px 0 0;
-    font-size: 0.9em;
-}
 #container div{
     width: 21%;
     display: inline-block;
     padding: 10px;
+    height: 190px;
     vertical-align: top;
     border: 1px solid #efefef;
     background: #f7f7f7;
     margin: 0px 5px 12px;
+}
+#container div a{
+    margin: 8px 0 0;
+    display: block;
+    font-size: 0.9em;
+}
+#container div a:hover{
+    color: #56a1d5;
 }
 #container div img{
     width: 100%;
@@ -359,6 +364,7 @@ textarea{
 
 #allinf {
     margin-top: 10px;
+    width: 90%;
     font-size: 0.9em;
 }
 #allinf li{
@@ -1126,5 +1132,7 @@ textarea{
 }
 
 #registro_categorias {
-    display: inline-block
+    display: inline-block;
 }
+
+
